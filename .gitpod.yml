@@ -1,0 +1,16 @@
+image: jelaniwoods/appdev2021-array-chapter@sha256:c3fc3004689b5a36ae53c4d94181158f3f6b2bffb3f11f0f4d5e80aca2347287
+
+tasks:
+  - command: bundle install
+  - init: bin/setup
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced
+    - vortizhe.simple-ruby-erb
+    - CraigMaslowski.erb
+    - Vense.rails-snippets
+    - wingrunr21.vscode-ruby
