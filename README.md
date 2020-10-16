@@ -66,7 +66,7 @@ array_element_square.rb should output '18.49' given the input '3.2 -1.1 -4.3 8.4
 
 array_min_max_difference.rb should output '6', '73', and '67' on separate lines 
 
-array_reverse.rb should output '5' given the input 'banana 35 zebra hello'. 
+array_reverse.rb should output '['hello', 'zebra', '35', 'banana']' given the input 'banana 35 zebra hello'. 
 
 array_reverse.rb should output '[4, 3, 2, 1]' given the input '1 2 3 4'. 
 
