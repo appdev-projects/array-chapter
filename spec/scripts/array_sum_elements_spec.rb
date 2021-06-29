@@ -8,6 +8,20 @@ describe "array_sum_elements.rb" do
           "Expected 'array_sum_elements.rb' to NOT literally print '151', but did anyway."
       end
     end
-    expect { require_relative '../../array_sum_elements' }.to output(/151\n/).to_stdout
+    # expect { require_relative '../../array_sum_elements' }.to output(/151\n/).to_stdout
+    output = with_captured_stdout { require_relative('../../array_sum_elements')} 
+    output = "empty" if output.empty? 
+    expect(output.match?(/151\n/i)).to be(true),
+      "Expected output to be '151', but was #{output}."
+
   end
+end
+
+def with_captured_stdout
+  original_stdout = $stdout  # capture previous value of $stdout
+  $stdout = StringIO.new     # assign a string buffer to $stdout
+  yield                      # perform the body of the user code
+  $stdout.string             # return the contents of the string buffer
+ensure
+  $stdout = original_stdout  # restore $stdout to its previous value
 end

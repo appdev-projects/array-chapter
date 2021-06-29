@@ -7,4 +7,4 @@ if [ -f $pid ]; then
   rm $pid
 fi
 fuser -k -n tcp 3000
-shotgun --port=3000 -o 0.0.0.0
+rackup --port=3000
