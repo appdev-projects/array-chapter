@@ -6,7 +6,7 @@ describe "array_reverse.rb" do
     output = with_captured_stdout { require_relative('../../array_reverse')} 
     output = "empty" if output.empty? 
     expect(output.match?(/\["hello", "zebra", "35", "banana"\]/i)).to be(true),
-      "Expected output to be '\[\"hello\", \"zebra\", \"35\", \"banana\"\]', but was #{output}."
+      "Expected output to be 'Enter at least 2 values, separated by spaces:\\n\[\"hello\", \"zebra\", \"35\", \"banana\"\]', but was #{output}."
 
   end
 end

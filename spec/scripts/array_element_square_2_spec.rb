@@ -10,7 +10,7 @@ describe "array_element_square.rb" do
     output = with_captured_stdout { require_relative('../../array_element_square')} 
     output = "empty" if output.empty? 
     expect(output.match?(/"?Enter at least 2 numbers, separated by spaces:"?\n9.0\n/i)).to be(true),
-      "Expected output to be 'Enter at least 2 numbers, separated by spaces:\"\n9.0\n', but was #{output}."
+      "Expected output to be 'Enter at least 2 numbers, separated by spaces:\"\\n9.0\n', but was #{output}."
   end
 end
 

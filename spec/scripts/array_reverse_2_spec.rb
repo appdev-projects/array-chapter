@@ -7,11 +7,10 @@ describe "array_reverse.rb" do
 
     allow_any_instance_of(Object).to receive(:gets).and_return("1 2 3 4\n")
 
-    # expect { require_relative '../../array_reverse' }.to output(/\["4", "3", "2", "1"\]\n/).to_stdout
     output = with_captured_stdout { require_relative('../../array_reverse')} 
     output = "empty" if output.empty? 
     expect(output.match?(/\["4", "3", "2", "1"\]\n/i)).to be(true),
-      "Expected output to be '\[\"4\", \"3\", \"2\", \"1\"\]\n]', but was #{output}."
+      "Expected output to be 'Enter at least 2 values, separated by spaces:\\n\[\"4\", \"3\", \"2\", \"1\"\]\n]', but was #{output}."
 
   end
 end

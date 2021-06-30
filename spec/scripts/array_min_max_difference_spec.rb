@@ -5,7 +5,7 @@ describe "array_min_max_difference.rb" do
     output = with_captured_stdout { require_relative('../../array_min_max_difference')} 
     output = "empty" if output.empty? 
     expect(output.match?(/"?6"?\n"?73"?\n"?67"?\n/i)).to be(true),
-      "Expected output to be '6\n73\n67\n', but was #{output}."
+      "Expected output to be '6\\n73\\n67\n', but was #{output}."
   end
 end
 
