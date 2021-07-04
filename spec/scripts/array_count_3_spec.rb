@@ -9,8 +9,8 @@ describe "array_count.rb" do
     # expect { require_relative '../../array_count' }.to output(/"?Enter at least 2 numbers, separated by spaces:"?\n5\n/).to_stdout
     output = with_captured_stdout { require_relative('../../array_count')} 
     output = "empty" if output.empty? 
-    expect(output.match?(/"?Enter at least 2 numbers, separated by spaces:"?\n9\n/i)).to be(true),
-      "Expected output to be 'Enter at least 2 numbers, separated by spaces:\\n9\n', but was #{output}."
+    expect(output.match?(/"?Enter at least 2 numbers, separated by spaces:"?\n5\n/i)).to be(true),
+      "Expected output to be 'Enter at least 2 numbers, separated by spaces:\\n5\n', but was #{output}."
 
   end
 end
