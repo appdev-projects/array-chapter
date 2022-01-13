@@ -84,8 +84,6 @@ RUN sudo mv chromedriver /usr/bin/chromedriver
 RUN sudo chown root:root /usr/bin/chromedriver
 RUN sudo chmod +x /usr/bin/chromedriver
 
-RUN /bin/bash -l -c "gem install htmlbeautifier"
-RUN /bin/bash -l -c "gem install rufo"
 COPY Gemfile /base-rails/Gemfile
 COPY --chown=gitpod:gitpod Gemfile.lock /base-rails/Gemfile.lock
 RUN /bin/bash -l -c "gem install bundler:2.1.4"
@@ -102,9 +100,8 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/so
 RUN sudo apt-get update && sudo apt-get install -y nodejs yarn
 #  postgresql-client
 # RUN sudo apt-get update && sudo apt-get install -y yarn
-# RUN sudo apt install -y postgresql postgresql-contrib libpq-dev psmisc lsof expect
-RUN sudo apt install -y libpq-dev psmisc lsof expect
+RUN sudo apt install -y postgresql postgresql-contrib libpq-dev psmisc lsof expect
 USER gitpod
-RUN echo 'export PATH="$PATH:$GITPOD_REPO_ROOT/bin"' >> ~/.bashrc
 RUN echo "rvm use 2.7.3" >> ~/.bashrc
 RUN echo "rvm_silence_path_mismatch_check_flag=1" >> ~/.rvmrc
+RUN echo 'export PATH="$PATH:$GITPOD_REPO_ROOT/bin"' >> ~/.bashrc

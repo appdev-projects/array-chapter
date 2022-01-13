@@ -1,15 +1,16 @@
-image: jelaniwoods/appdev2021-ruby-chapters@sha256:dcf81eb69cd6df4db344ec05934dd81da140734205a8b2db0cfdd4f9d2a56299
+image: patrickmckernin/arraychapter2022
 
 tasks:
-  - command: bundle install
   - init: bin/setup
 ports:
   - port: 3000
     onOpen: open-preview
-    visibility: public
+  - port: 9515
+    onOpen: ignore
+
 
 vscode:
   extensions:
-    - shd101wyy.markdown-preview-enhanced
-    - wingrunr21.vscode-ruby
+    - vortizhe.simple-ruby-erb
     - mbessey.vscode-rufo
+    
