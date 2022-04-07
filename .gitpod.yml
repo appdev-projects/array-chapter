@@ -1,4 +1,4 @@
-image: patrickmckernin/arraychapter2022
+image: jelaniwoods/appdev2022-ruby-chapters
 
 tasks:
   - init: bin/setup
@@ -13,4 +13,4 @@ vscode:
   extensions:
     - vortizhe.simple-ruby-erb
     - mbessey.vscode-rufo
-    
+    - aliariff.vscode-erb-beautify
