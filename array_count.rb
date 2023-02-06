@@ -1,8 +1,9 @@
 # Create an Array and use the count method to print how many elements are in the Array.
 # 
 # Expected output:
-# "Enter at least 2 numbers, separated by spaces:"
-# 2
+#
+#   "Enter at least 2 numbers, separated by spaces:"
+#   2
 
 p "Enter at least 2 numbers, separated by spaces:"
 

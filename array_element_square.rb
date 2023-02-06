@@ -2,8 +2,8 @@
 # 
 # The expected output will be something like:
 # 
-# Enter at least 2 numbers, separated by spaces:
-# 9.0
+#   "Enter at least 2 numbers, separated by spaces:"
+#   9.0
 # 
 
 p "Enter at least 2 numbers, separated by spaces:"
