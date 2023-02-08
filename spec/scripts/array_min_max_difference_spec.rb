@@ -1,8 +1,8 @@
-describe "array_min_max_difference.rb" do
+describe "min_max_difference.rb" do
   it "should output '6', '73', and '67' on separate lines" , points: 1 do
 
-    # expect { require_relative '../../array_min_max_difference' }.to output(/"?6"?\n"?73"?\n"?67"?\n/).to_stdout
-    output = with_captured_stdout { require_relative('../../array_min_max_difference')} 
+    # expect { require_relative '../../min_max_difference' }.to output(/"?6"?\n"?73"?\n"?67"?\n/).to_stdout
+    output = with_captured_stdout { require_relative('../../min_max_difference')} 
     output = "empty" if output.empty? 
     expect(output.match?(/"?6"?\n"?73"?\n"?67"?\n/i)).to be(true),
       "Expected output to be '6\\n73\\n67\n', but was #{output}."

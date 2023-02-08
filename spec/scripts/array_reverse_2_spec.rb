@@ -1,13 +1,13 @@
-describe "array_reverse.rb" do
+describe "reverse.rb" do
   it "should output '[4, 3, 2, 1]' given the input '1 2 3 4'." , points: 1 do
 
-    # Un-require array_reverse.rb
-    array_reverse = $".select{|r| r.include? 'array_reverse.rb'}
-    $".delete(array_reverse.first)
+    # Un-require reverse.rb
+    reverse = $".select{|r| r.include? 'reverse.rb'}
+    $".delete(reverse.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("1 2 3 4\n")
 
-    output = with_captured_stdout { require_relative('../../array_reverse')} 
+    output = with_captured_stdout { require_relative('../../reverse')} 
     output = "empty" if output.empty? 
     expect(output.match?(/\["4", "3", "2", "1"\]\n/i)).to be(true),
       "Expected output to be 'Enter at least 2 values, separated by spaces:\\n\[\"4\", \"3\", \"2\", \"1\"\]\n]', but was #{output}."
