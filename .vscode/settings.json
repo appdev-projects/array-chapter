@@ -5,5 +5,17 @@
   },
   "files.associations": {
     "*.erb": "erb"
-  }
+  },
+  "files.exclude": {
+    "**/.git": true,
+    ".vscode": true,
+    ".bundle": true,
+    ".*": true,
+    "*.ru": true,
+    "Dockerfile": true,
+    "Gem*": true,
+    "install-packages": true,
+    "main.rb": true,
+    "README.md": true,
+  },
 }
