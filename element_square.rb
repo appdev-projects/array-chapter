@@ -1,10 +1,12 @@
 # Print the square of the second-to-last number that the user enters.
 # 
-# The expected output will be something like:
+# Expected output (with input "1 3 18"):
 # 
 #   "Enter at least 2 numbers, separated by spaces:"
+#   1 3 18
 #   9.0
 # 
+# The output should be a Float.
 
 p "Enter at least 2 numbers, separated by spaces:"
 

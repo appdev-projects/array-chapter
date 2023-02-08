@@ -1,8 +1,10 @@
-# Create an Array and use the reverse method to return the array in reverse order.
+# Create an Array and use the reverse method 
+# to return the array in reverse order.
 #
-# Expected output: 
+# Expected output (with input "0 first second"): 
 #
 #   "Enter at least 2 values, separated by spaces:"
+#   0 first second
 #   ["second", "first", 0]
 
 p "Enter at least 2 values, separated by spaces:"

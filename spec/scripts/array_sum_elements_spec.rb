@@ -4,8 +4,10 @@ describe "sum_elements.rb" do
     file_contents = File.read(sum_elements_file)
     File.foreach(sum_elements_file).with_index do |line, line_num|
       if line.include?("p") || line.include?("puts")
-        expect(line).to_not match(/151/),
-          "Expected 'sum_elements.rb' to NOT literally print '151', but did anyway."
+        unless line.include?("#")
+          expect(line).to_not match(/151/),
+            "Expected 'sum_elements.rb' to NOT literally print '151', but did anyway."
+        end
       end
     end
     # expect { require_relative '../../sum_elements' }.to output(/151\n/).to_stdout
