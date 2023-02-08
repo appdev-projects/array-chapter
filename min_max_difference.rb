@@ -9,3 +9,10 @@
 #   difference
 
 array = [12, 23, 41, 73, 19, 6]
+
+
+# ~~~~~ Specs (make it do these things) ~~~~~
+#
+# min_max_difference.rb should output '6', '73', and '67' on separate lines 
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
