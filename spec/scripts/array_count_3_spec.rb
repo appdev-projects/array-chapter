@@ -1,13 +1,13 @@
-describe "array_count.rb" do
+describe "count.rb" do
   it "should output '5' given the input '9 80 17 28 36'" , points: 1 do
-    # Un-require array_count.rb
-    array_count = $".select{|r| r.include? 'array_count.rb'}
-    $".delete(array_count.first)
+    # Un-require count.rb
+    count = $".select{|r| r.include? 'count.rb'}
+    $".delete(count.first)
     
     allow_any_instance_of(Object).to receive(:gets).and_return("9 80 17 28 36\n")
 
-    # expect { require_relative '../../array_count' }.to output(/"?Enter at least 2 numbers, separated by spaces:"?\n5\n/).to_stdout
-    output = with_captured_stdout { require_relative('../../array_count')} 
+    # expect { require_relative '../../count' }.to output(/"?Enter at least 2 numbers, separated by spaces:"?\n5\n/).to_stdout
+    output = with_captured_stdout { require_relative('../../count')} 
     output = "empty" if output.empty? 
     expect(output.match?(/"?Enter at least 2 numbers, separated by spaces:"?\n5\n/i)).to be(true),
       "Expected output to be 'Enter at least 2 numbers, separated by spaces:\\n5\n', but was #{output}."

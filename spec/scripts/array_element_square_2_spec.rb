@@ -1,13 +1,13 @@
-describe "array_element_square.rb" do
+describe "element_square.rb" do
   it "should output '9.0' given the input '6 4 6 6 6 3 2'" , points: 1 do
-    # Un-require array_element_square.rb
-    array_element_square = $".select{|r| r.include? 'array_element_square.rb'}
-    $".delete(array_element_square.first)
+    # Un-require element_square.rb
+    element_square = $".select{|r| r.include? 'element_square.rb'}
+    $".delete(element_square.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("6 4 6 6 6 3 2\n")
 
-    # expect { require_relative '../../array_element_square' }.to output(/"?Enter at least 2 numbers, separated by spaces:"?\n9.0\n/).to_stdout
-    output = with_captured_stdout { require_relative('../../array_element_square')} 
+    # expect { require_relative '../../element_square' }.to output(/"?Enter at least 2 numbers, separated by spaces:"?\n9.0\n/).to_stdout
+    output = with_captured_stdout { require_relative('../../element_square')} 
     output = "empty" if output.empty? 
     expect(output.match?(/"?Enter at least 2 numbers, separated by spaces:"?\n9.0\n/i)).to be(true),
       "Expected output to be 'Enter at least 2 numbers, separated by spaces:\"\\n9.0\n', but was #{output}."
