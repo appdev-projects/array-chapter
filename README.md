@@ -22,7 +22,7 @@ The expected output will be something like:
 
 ```
 "Enter at least 2 numbers, separated by spaces:"
-42 3 8 # user's input
+42 5 3 8 # user's input
 9.0
 ```
 
@@ -36,8 +36,8 @@ Expected output:
 
 ```
 "Enter at least 2 numbers, separated by spaces:"
-42 3 8 # user's input
-3
+42 5 3 8 # user's input
+4
 ```
 
 ### array_reverse.rb
@@ -50,8 +50,8 @@ Expected output:
 
 ```
 "Enter at least 2 values, separated by spaces:"
-42 3 8 # user's input
-[8, 3, 42]
+42 5 3 8 # user's input
+[8, 3, 5, 42]
 ```
 
 ### array_min_max_difference.rb
@@ -64,7 +64,7 @@ Expected output:
 
 ```
 "Enter at least 2 values, separated by spaces:"
-42 3 8 # user's input
+42 5 3 8 # user's input
 
 3
 42
@@ -81,9 +81,9 @@ Expected output:
 
 ```
 "Enter at least 2 values, separated by spaces:"
-42 3 8 # user's input
+42 5 3 8 # user's input
 
-53
+58
 ```
 
 ## Specs
