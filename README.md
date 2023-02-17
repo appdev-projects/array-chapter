@@ -56,20 +56,15 @@ Expected output:
 
 ### array_min_max_difference.rb
 
-Ask the user to enter at least 2 numbers. Store the user's input.
+Use the provided array (don't ask the user for a value, in this task).
 
-Print the number with the lowest value, the number with the highest value, and the difference between the highest value and the lowest value.
+Print the smallest number in the array, the largest number in the array, and the difference between the two.
+ 
+#   lowest_number
+#   highest_number
+#   difference
 
-Expected output: 
-
-```
-"Enter at least 2 values, separated by spaces:"
-42 5 3 8 # user's input
-
-3
-42
-39
-```
+array = [12, 23, 41, 73, 19, 6]
 
 ### array_sum_elements.rb
 
