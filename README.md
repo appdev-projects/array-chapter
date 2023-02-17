@@ -58,13 +58,11 @@ Expected output:
 
 Use the provided array (don't ask the user for a value, in this task).
 
-Print the smallest number in the array, the largest number in the array, and the difference between the two.
- 
-#   lowest_number
-#   highest_number
-#   difference
-
+```
 array = [12, 23, 41, 73, 19, 6]
+```
+
+Print the smallest number in the array, the largest number in the array, and the difference between the two.
 
 ### array_sum_elements.rb
 
