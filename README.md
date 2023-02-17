@@ -13,42 +13,81 @@ To re-run this command, you can use the UP and DOWN arrow keys to look at the hi
 ## Array
 
 ### array_element_square.rb
+
+Ask the user to enter at least 2 numbers. Store the user's input.
+
 Print the square of the second-to-last number that the user enters.
 
 The expected output will be something like:
+
 ```
 "Enter at least 2 numbers, separated by spaces:"
+42 3 8 # user's input
 9.0
 ```
+
 ### array_count.rb
-Create an Array and use the count method to print how many elements are in that Array.
+
+Ask the user to enter at least 2 numbers. Store the user's input.
+
+Use the `count` method to print how many numbers the user entered.
 
 Expected output:
+
 ```
 "Enter at least 2 numbers, separated by spaces:"
-2
+42 3 8 # user's input
+3
 ```
+
 ### array_reverse.rb
-Create an Array and use the reverse method to return the array in reverse order.
+
+Ask the user to enter at least 2 numbers. Store the user's input.
+
+Use the `reverse` method to return the numbers in reverse order.
 
 Expected output: 
+
 ```
 "Enter at least 2 values, separated by spaces:"
-["second", "first", 0]
+42 3 8 # user's input
+[8, 3, 42]
 ```
 
 ### array_min_max_difference.rb
-Create an Array of numbers and output the number with the lowest value in the array, the number with the highest value in the array, and the difference between the highest value and the lowest value.
+
+Ask the user to enter at least 2 numbers. Store the user's input.
+
+Print the number with the lowest value, the number with the highest value, and the difference between the highest value and the lowest value.
+
+Expected output: 
+
 ```
-lowest_number
-highest_number
-difference
+"Enter at least 2 values, separated by spaces:"
+42 3 8 # user's input
+
+3
+42
+39
 ```
 
 ### array_sum_elements.rb
-Output the sum value of all the elements in the array.
+
+Ask the user to enter at least 2 numbers. Store the user's input.
+
+Print the sum of the numbers the user entered.
+
+Expected output: 
+
+```
+"Enter at least 2 values, separated by spaces:"
+42 3 8 # user's input
+
+53
+```
 
 ## Specs
+
 <details>
   <summary>Click here to see names of each test</summary>
 
