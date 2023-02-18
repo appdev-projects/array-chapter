@@ -14,7 +14,7 @@ To re-run this command, you can use the UP and DOWN arrow keys to look at the hi
 
 ### array_element_square.rb
 
-Ask the user to enter at least 2 numbers. Store the user's input.
+Ask the user to enter at least 2 numbers. Store the user's input. The first few lines of code provided in the file does this for you.
 
 Print the square of the second-to-last number that the user enters.
 
@@ -28,7 +28,7 @@ The expected output will be something like:
 
 ### array_count.rb
 
-Ask the user to enter at least 2 numbers. Store the user's input.
+Ask the user to enter at least 2 numbers. Store the user's input. The first few lines of code provided in the file does this for you.
 
 Use the `count` method to print how many numbers the user entered.
 
@@ -42,7 +42,7 @@ Expected output:
 
 ### array_reverse.rb
 
-Ask the user to enter at least 2 numbers. Store the user's input.
+Ask the user to enter at least 2 numbers. Store the user's input. The first few lines of code provided in the file does this for you.
 
 Use the `reverse` method to return the numbers in reverse order.
 
@@ -66,18 +66,9 @@ Print the smallest number in the array, the largest number in the array, and the
 
 ### array_sum_elements.rb
 
-Ask the user to enter at least 2 numbers. Store the user's input.
+Use the provided array (don't ask the user for a value in this task).
 
-Print the sum of the numbers the user entered.
-
-Expected output: 
-
-```
-"Enter at least 2 values, separated by spaces:"
-42 5 3 8 # user's input
-
-58
-```
+Print the sum of the numbers in the provided array
 
 ## Specs
 
